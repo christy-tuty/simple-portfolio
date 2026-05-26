@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANTA | Data Analyst Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button id="theme-toggle">🌙</button>
+        <div class="container">
+            <h1>MANTA</h1>
+            <p class="subtitle">Data Analyst</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am MANTA, a passionate Data Analyst dedicated to transforming complex datasets into clear, actionable insights. With a focus on visualization and statistical modeling, I help businesses make informed, data-driven decisions.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>Analysis of urban green space distribution using GIS data.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>Sales trend prediction model for retail optimization.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>Customer churn visualization dashboard.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: manta@example.com</p>
+            <p><a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+        </section>
+    </main>
+
+    <script>
+        const toggle = document.getElementById('theme-toggle');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-theme');
+            toggle.textContent = document.body.classList.contains('light-theme') ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>
